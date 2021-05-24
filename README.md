@@ -1,10 +1,9 @@
-# One page Portfolio Website (HTML CSS Project for Ppractice)
-## Watch The Complete Tutorial ![YouTube Video Views](https://img.shields.io/youtube/views/ZFQkb26UD1Y?style=social) : https://youtu.be/ZFQkb26UD1Y   
-
-
-This project is for html &amp; css practice. We made this for youtube tutorial purpose.
-<b>coded by [Shaif Arfan](https://github.com/shaifarfan)</b>
-### 👍 HAVE FUN 👍
-Thanks, Arfan
-
-![Watch Now](./img/Design.jpg)
+# Matrix Development
+### Website Development by <img src="https://fnageer.ml/favicon.ico" height="20" width="20" /> fnageer.ml
+## Deploys via fnageer.ml Static
+### Staging
+![GitHub](https://img.shields.io/github/checks-status/fnageerml/matrix-development/master?label=GITHUB&logo=github&logoColor=%23ffffff&style=for-the-badge)
+### Production
+![fnageer.ml Static](https://img.shields.io/netlify/daffa06e-0516-409c-89de-0aab3047ba9d?label=FNAGEER.ML%20STATIC&logo=git&logoColor=%23ffffff&style=for-the-badge)
+### Live
+![Cloudflare](https://img.shields.io/website?down_message=Error&logo=cloudflare&logoColor=%23ffffff&style=for-the-badge&up_message=Online&url=https%3A%2F%2Fmatrixdev.xyz)
