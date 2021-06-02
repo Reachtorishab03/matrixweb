@@ -1,4 +1,57 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+.link {
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+	white-space: nowrap;
+	color: var(--color-text);
+}
+
+	.link::before,
+	.link::after {
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background: currentColor;
+		top: 100%;
+		left: 0;
+		pointer-events: none;
+	}
+
+	.link::before {
+		content: '';
+		/* show by default */
+	}
+
+.link--iocaste {
+	font-family: lust-fine, sans-serif;
+	overflow: hidden;
+	padding: 7px 0;
+}
+
+.link__graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	fill: none;
+	stroke: transparent;
+	stroke-width: 1px;
+}
+
+.link__graphic--slide {
+	top: -3px;
+	stroke-width: 2px;
+	transition: transform 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.link:hover .link__graphic--slide {
+	stroke: white;
+	transform: translate3d(-66.6%, 0, 0);
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -55,15 +108,14 @@ p {
 	box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
 	border: solid 3px transparent;
 	/*background-image: linear-gradient(90deg,#16171b,#16171b),linear-gradient(90deg,#376df9 0,#ff5fa0 47%,#ffc55a);*/
-	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg,#376df9 0,#ff5fa0 47%,#ffc55a);
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg,#CB3895 0,#27A6EA 47%,#1779E6);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
-	box-shadow: 2px 1000px 1px #000000 inset;
+	box-shadow: 2px 1000px 1px #1779E6 inset;
 }
 	.cta:hover {
 		box-shadow: none;
 		color: white;
-		font-weight: 900;
 	}
 .brand h1 {
 	font-size: 3rem;
@@ -143,50 +195,50 @@ p {
 	letter-spacing: initial;
 }
 	#header .nav-list ul li:hover a {
-		color: black;
+		color: white;
 	}
-#header .hamburger {
-	height: 60px;
-	width: 60px;
-	display: inline-block;
-	border: 3px solid white;
-	border-radius: 50%;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 100;
-	cursor: pointer;
-	transform: scale(0.8);
-	margin-right: 20px;
-}
-#header .hamburger:after {
-	position: absolute;
-	content: '';
-	height: 100%;
-	width: 100%;
-	border-radius: 50%;
-	border: 3px solid white;
-	animation: hamburger_puls 1s ease infinite;
-}
-#header .hamburger .bar {
-	height: 2px;
-	width: 30px;
-	position: relative;
-	background-color: white;
-	z-index: -1;
-}
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	background-color: white;
-	transition: 0.3s ease;
-	transition-property: top, bottom;
-}
+	#header .hamburger {
+		height: 60px;
+		width: 60px;
+		display: inline-block;
+		border: 3px solid #1779E6;
+		border-radius: 50%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 100;
+		cursor: pointer;
+		transform: scale(0.8);
+		margin-right: 20px;
+	}
+		#header .hamburger:after {
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			border: 3px solid #1779E6;
+			animation: hamburger_puls 1s ease infinite;
+		}
+		#header .hamburger .bar {
+			height: 2px;
+			width: 30px;
+			position: relative;
+			background-color: #1779E6;
+			z-index: -1;
+		}
+			#header .hamburger .bar::after,
+			#header .hamburger .bar::before {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				background-color: #1779E6;
+				transition: 0.3s ease;
+				transition-property: top, bottom;
+			}
 #header .hamburger .bar::after {
 	top: 8px;
 }
@@ -295,7 +347,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
+	background-color: #1779E6;
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -309,7 +361,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
 	opacity: 0.9;
 	z-index: -1;
 }
