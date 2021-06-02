@@ -41,9 +41,9 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
-.section-title span {
-	color: crimson;
-}
+	.section-title span {
+		color: #1779E6;
+	}
 
 .cta {
 	border-radius: 100rem;
@@ -70,9 +70,9 @@ p {
 	text-transform: uppercase;
 	color: white;
 }
-.brand h1 span {
-	color: crimson;
-}
+	.brand h1 span {
+		color: #1779E6;
+	}
 
 /* Header section */
 #header {
@@ -142,9 +142,9 @@ p {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
-#header .nav-list ul li:hover a {
-	color: crimson;
-}
+	#header .nav-list ul li:hover a {
+		color: black;
+	}
 #header .hamburger {
 	height: 60px;
 	width: 60px;
@@ -203,7 +203,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-color: #16171b;
+	background-color: #1779E6;
 	background-image: url(bkg.png);
 	background-size: cover;
 	background-position: top center;
@@ -246,16 +246,16 @@ p {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 0;
-	background-color: crimson;
-	animation: text_reveal_box 1s ease;
-	animation-delay: 0.5s;
-}
+	#hero h1 span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		background-color: #1779E6;
+		animation: text_reveal_box 1s ease;
+		animation-delay: 0.5s;
+	}
 #hero h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
@@ -439,16 +439,16 @@ p {
 	position: relative;
 	border: 10px solid white;
 }
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -1;
-}
+	#about .col-left .about-img::after {
+		content: '';
+		position: absolute;
+		left: -33px;
+		top: 19px;
+		height: 98%;
+		width: 98%;
+		border: 7px solid #1779E6;
+		z-index: -1;
+	}
 /* End About Section */
 
 /* contact Section */
@@ -564,7 +564,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: #1779E6;
 		font-weight: 500;
 	}
 }
@@ -628,7 +628,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid #1779E6;
 	}
 	#about .col-right {
 		text-align: left;
